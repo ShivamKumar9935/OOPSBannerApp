@@ -1,5 +1,7 @@
 public class OOPSBannerApp {
+
     public static void main(String[] args) {
+
         String[] O = {
             " ***** ",
             "*     *",
@@ -21,13 +23,13 @@ public class OOPSBannerApp {
         };
 
         String[] S = {
-            " *****",
-            "*     ",
-            "*     ",
-            " **** ",
-            "     *",
-            "     *",
-            " *****"
+            " ***** ",
+            "*      ",
+            "*      ",
+            " ****  ",
+            "     * ",
+            "     * ",
+            " ***** "
         };
 
         // Combine letters side by side, row by row

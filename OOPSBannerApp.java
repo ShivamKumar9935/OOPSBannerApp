@@ -1,20 +1,39 @@
 public class OOPSBannerApp {
-
-    /**
-     * Main method - Entry point of application
-     * @param args Command line arguments
-     */
     public static void main(String[] args) {
+        String[] O = {
+            " ***** ",
+            "*     *",
+            "*     *",
+            "*     *",
+            "*     *",
+            "*     *",
+            " ***** "
+        };
 
-        System.out.println(" *****   *****   *****    ***** ");
-        System.out.println("*     * *     * *     *  *     *");
-        System.out.println("*     * *     * *     *  *      ");
-        System.out.println("*     * *     * *****     ******");
-        System.out.println("*     * *     * *              *");
-        System.out.println("*     * *     * *              ");
-        System.out.println(" *****   *****   *          ***** ");
+        String[] P = {
+            "****** ",
+            "*     *",
+            "*     *",
+            "****** ",
+            "*      ",
+            "*      ",
+            "*      "
+        };
 
+        String[] S = {
+            " *****",
+            "*     ",
+            "*     ",
+            " **** ",
+            "     *",
+            "     *",
+            " *****"
+        };
 
-
+        // Combine letters side by side, row by row
+        int rows = O.length;
+        for (int i = 0; i < rows; i++) {
+            System.out.println(O[i] + "  " + O[i] + "  " + P[i] + "  " + S[i]);
+        }
     }
 }

@@ -1,6 +1,6 @@
 public class OOPSBannerApp {
 
-    // Static Inner Class
+   
     static class CharacterPattern {
         private char character;
         private String[] pattern;
@@ -21,7 +21,7 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Create character pattern objects
+        
         CharacterPattern O = new CharacterPattern('O', new String[]{
                 " ***** ",
                 "*     *",
@@ -52,7 +52,7 @@ public class OOPSBannerApp {
                 " ***** "
         });
 
-        // Word to print
+        
         CharacterPattern[] word = {O, O, P, S};
 
         int rows = 7;

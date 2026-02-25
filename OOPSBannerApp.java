@@ -2,35 +2,9 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String[] O = {
-                " ***** ",
-                "*     *",
-                "*     *",
-                "*     *",
-                "*     *",
-                "*     *",
-                " ***** "
-        };
-
-        String[] P = {
-                "****** ",
-                "*     *",
-                "*     *",
-                "****** ",
-                "*      ",
-                "*      ",
-                "*      "
-        };
-
-        String[] S = {
-                " ***** ",
-                "*      ",
-                "*      ",
-                " ****  ",
-                "     * ",
-                "     * ",
-                " ***** "
-        };
+        String[] O = buildO();
+        String[] P = buildP();
+        String[] S = buildS();
 
         String[] banner = {
                 String.join("  ", O[0], O[0], P[0], S[0]),
@@ -42,9 +16,46 @@ public class OOPSBannerApp {
                 String.join("  ", O[6], O[6], P[6], S[6])
         };
 
-     
         for (String line : banner) {
             System.out.println(line);
         }
+    }
+
+    // Static helper methods
+
+    static String[] buildO() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    static String[] buildP() {
+        return new String[]{
+                "****** ",
+                "*     *",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    static String[] buildS() {
+        return new String[]{
+                " ***** ",
+                "*      ",
+                "*      ",
+                " ****  ",
+                "     * ",
+                "     * ",
+                " ***** "
+        };
     }
 }
